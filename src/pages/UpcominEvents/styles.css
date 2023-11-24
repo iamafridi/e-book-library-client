@@ -1,0 +1,34 @@
+
+  /* html,
+  body {
+    position: relative;
+  }
+   */
+  /* body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  } */
+  
+  .swiper {
+    width: 150vh;
+    height: 50vh;
+  }
+  
+  
+  .swiper-slide img {
+    display: block;
+    width: 50vh;
+    height: 50vh;
+    object-fit: cover;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .swiper {
+        width: 50vh;
+        height: 50vh;
+      }
+  }

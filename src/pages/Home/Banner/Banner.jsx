@@ -2,8 +2,8 @@ import video from '../../../assets/video/VideoBackgroundLibrary.mp4'
 
 const Banner = () => {
     return (
-        <div className='mb-10'>
-            <div id="video-container">
+        <div className='mt-4 mb-10 '>
+            <div id="video-container ">
                 <div className=' lg:m-10 items-center justify-center lg:mx-40'>
                     <div className=" border  my-[20vh] lg:my-[40vh]  lg:mx-auto rounded-xl bg-white absolute flex h-10 w-full min-w-[200px] lg:max-w-[50rem]">
                     <input
@@ -25,7 +25,7 @@ const Banner = () => {
                     </label>
                 </div>
                 </div>
-                <video autoPlay loop muted src={video}></video>
+                <video className='rounded' autoPlay loop muted src={video}></video>
 
             </div>
         </div>
