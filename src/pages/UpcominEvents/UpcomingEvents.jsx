@@ -22,7 +22,7 @@ const UpcomingEvents = () => {
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
     };
     return (
-        <div className="text-center text-3xl mb-10 font-bold items-center justify-center ">
+        <div className="text-center text-3xl mb-10 font-bold items-center justify-center  text-white bg-gray-700 rounded-xl">
             <h2>Upcoming Events
                 <hr className="w-28 h-2 mt-4  border-spacing-2 border-dotted bg-gray-500 justify-center border mx-auto " />
             </h2>
@@ -48,7 +48,7 @@ const UpcomingEvents = () => {
                         onAutoplayTimeLeft={onAutoplayTimeLeft}
                         className="mySwiper"
                     >
-                        <SwiperSlide>
+                        <SwiperSlide className='px-10 ml-5'>
                             <div className='grid grid-col-1 lg:grid-cols-2 gap-5 p-5'>
                                 <div>
                                     <h3 className='text-sm mb-5'>Author Q&A Session: <br /> Exploring Literary Worlds</h3>

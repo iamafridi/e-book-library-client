@@ -1,11 +1,11 @@
 const Newsletter = () => {
     return (
         <div>
-            <div className="h-[50vh] mb-20 bg-black text-white stroke-orange-950 shadow-black uppercase rounded-lg  " style={{ backgroundImage: 'url(https://i.ibb.co/yWz3z7F/book-exchange.webp) ' }}>
+            <div className="h-[50vh] mb-20 bg-gray-200 text-black stroke-orange-950 shadow-black uppercase rounded-lg  " >
                 <h3 className="text-3xl font-bold font-serif  text-center p-10 ">Stay With Us
                     <p className="text-black">.......</p>
                 </h3>
-                <p className="text-center decoration-black stroke-white hover:bg-yellow-500">Subscribe to our newsletters now and stay up-to-date with new <br /> collections, the latest lookbooks and exclusive offers</p>
+                <p className="text-center decoration-black stroke-white">Subscribe to our newsletters now and stay up-to-date with new <br /> collections, the latest lookbooks and exclusive offers</p>
 
                 <div className="item-center justify-center text-center mt-10 mx-auto">
                     <input type="text" placeholder="Subscribe to the newsletter" className="input input-bordered  input-primary w-full max-w-xs" />
