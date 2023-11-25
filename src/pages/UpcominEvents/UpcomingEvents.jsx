@@ -1,4 +1,5 @@
-import React, { useRef, useState } from 'react';
+/* eslint-disable react/no-unescaped-entities */
+import  { useRef} from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -51,7 +52,7 @@ const UpcomingEvents = () => {
                             <div className='grid grid-col-1 lg:grid-cols-2 gap-5 p-5'>
                                 <div>
                                     <h3 className='text-sm mb-5'>Author Q&A Session: <br /> Exploring Literary Worlds</h3>
-                                    <p className='w-50 text-xs text-left'>Join us for an exclusive live Q&A session with award-winning authors as they delve into the depths of their literary creations. This event aims to bring readers closer to the minds behind their favorite books, providing insights into the imaginative process, character development, and the inspiration behind the worlds they've crafted. From fantasy realms to historical settings, explore diverse literary landscapes and interact with authors who breathe life into them. Don't miss this opportunity to ask your burning questions and gain a deeper understanding of the stories that captivate you. The session will be moderated and open to audience participation through live chat.</p>
+                                    <p className='w-50 text-xs text-left'>Join us for an exclusive live Q&A session with award-winning authors as they delve into the depths of their literary creations. This event aims to bring readers closer to the minds behind their favorite books, providing insights into the imaginative process, character development, and the inspiration behind the worlds they have crafted. From fantasy realms to historical settings, explore diverse literary landscapes and interact with authors who breathe life into them. Do not miss this opportunity to ask your burning questions and gain a deeper understanding of the stories that captivate you. The session will be moderated and open to audience participation through live chat.</p>
                                 </div>
                                 <div>
                                     <img src="https://i.ibb.co/rGQRLST/swiper1.jpg" alt="" />

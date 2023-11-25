@@ -1,0 +1,86 @@
+ [
+      {
+        "title": "Personalized Reading Recommendations",
+        "short_description": "Get tailor-made book suggestions based on your preferences and reading history.",
+        "description": "Our personalized reading recommendation service aims to enhance your reading experience by offering customized book suggestions. By analyzing your reading habits, preferred genres, and past favorites, our team of literary experts and algorithms curates a personalized list of book recommendations just for you. Whether you're seeking a thrilling mystery, an inspiring memoir, or a gripping fantasy novel, our service ensures that you discover books perfectly suited to your taste. Dive into a world of literary exploration tailored to your unique preferences.",
+        "date": "Available on demand",
+        "time": "10:00 AM -4:00 PM",
+        "price": "Free 2 time then 2.50",
+        "image_url": "https://i.ibb.co/7J4nHYq/personal-Reading.webp"
+
+
+      },
+      {
+        "title": "Virtual Bookshelf Organization",
+        "short_description": "Organize and manage your digital book collection with our virtual bookshelf service.",
+        "description": "Simplify and streamline your reading experience with our virtual bookshelf organization service. Access and manage your digital book collection effortlessly by categorizing books according to genres, authors, reading status, and more. Our user-friendly platform allows you to create personalized virtual bookshelves, making it easy to track your reading progress, discover new reads, and maintain an organized library. Whether you're an avid reader with an extensive collection or just starting to build your digital library, our service helps you keep your literary world neatly arranged and easily accessible.",
+        "date": "Available on demand",
+        "time": "10:00 AM -4:00 PM",
+        "price": 2.99,
+        "image_url": "https://i.ibb.co/fDYhGmL/virtual-bookshelf.jpg"
+      },
+      {
+        "title": "Author Webinars & Masterclasses",
+        "short_description": "Attend exclusive webinars and masterclasses conducted by celebrated authors.",
+        "description": "Immerse yourself in the world of literature through our author-led webinars and masterclasses. Gain insights into the art of writing, storytelling techniques, and the creative process directly from acclaimed authors. From best-selling novelists to seasoned poets, our platform hosts live and recorded sessions where authors share their experiences, offer writing tips, and engage with aspiring writers and book enthusiasts. Explore various aspects of the literary world, learn from the masters themselves, and enrich your understanding of the craft of writing through these immersive sessions.",
+        "date": "Scheduled sessions throughout the year",
+        "time": "10:00 AM -4:00 PM",
+        "price": 35.99,
+        "image_url": "https://i.ibb.co/DrMtdS2/author-webneir.jpg"
+      },
+      {
+        "title": "Book Discussion Forums",
+        "short_description": "Join online forums to discuss books, share opinions, and connect with fellow readers.",
+        "description": "Engage in vibrant discussions about your favorite books and literary topics within our online book discussion forums. Connect with a community of readers, share your thoughts, and explore diverse perspectives on various books and genres. Whether you're looking to delve into classic literature, contemporary bestsellers, or niche genres, our forums provide a platform for meaningful conversations, book recommendations, and the exchange of insights. Participate in existing discussions or start your own, fostering a welcoming environment for book lovers to connect and engage in enriching literary discourse.",
+        "date": "Ongoing",
+        "time": "10:00 AM -4:00 PM",
+        "price": 10.99,
+        "image_url": "https://i.ibb.co/PZYMpHL/Book-discussion.jpg"
+      },
+      {
+        "title": "Digital Literary Events Calendar",
+        "short_description": "Access a curated calendar of literary events, author talks, and book launches.",
+        "description": "Stay updated and informed about upcoming literary events, author talks, book launches, and reading-related activities with our comprehensive digital literary events calendar. Our curated calendar showcases a wide range of events from the literary world, including virtual book festivals, author interviews, book signings, and more. Explore the diverse landscape of literary happenings, plan your participation in advance, and immerse yourself in the rich tapestry of literary culture. Whether you're interested in attending live discussions or virtual book tours, our calendar serves as a one-stop resource for all things literature.",
+        "date": "Updated regularly with upcoming events",
+        "time": "10:00 AM -4:00 PM",
+        "price": 4.99,
+        "image_url": " https://i.ibb.co/bXF6kQL/book-Events.jpg"
+      },
+      {
+        "title": "Reading Challenges & Goal Tracking",
+        "short_description": "Take part in reading challenges and track your reading progress and goals.",
+        "description": "Challenge yourself and set reading goals with our reading challenges and progress tracking service. Participate in themed reading challenges, such as reading a certain number of books within a genre, exploring diverse authors, or tackling specific literary themes. Track your reading progress, set personal reading goals, and celebrate milestones along the way. Our platform provides tools to log your reading activities, share progress with the community, and discover new reading challenges to keep your reading journey exciting and fulfilling.",
+        "date": "Ongoing",
+        "time": "10:00 AM -4:00 PM",
+        "price": 5.99,
+        "image_url": "https://i.ibb.co/DwZjfqh/99-reading.jpg"
+      },
+      {
+        "title": "Book Review Exchange",
+        "short_description": "Engage in a book review exchange program with fellow readers.",
+        "description": "Join our book review exchange program designed to foster a culture of shared literary insights and feedback among readers. Connect with fellow book enthusiasts, exchange book reviews, and discover new perspectives on books you've read or plan to read. Share your thoughts, opinions, and reflections on books while gaining valuable insights from diverse viewpoints. Engaging in the review exchange program not only helps you refine your own reviewing skills but also contributes to a supportive community of readers passionate about discussing and sharing their love for literature.",
+        "date": "Ongoing",
+        "time": "10:00 AM -4:00 PM",
+        "price": 8.99,
+        "image_url": "https://i.ibb.co/yWz3z7F/book-exchange.webp"
+      },
+      {
+        "title": "Author Spotlight Interviews",
+        "short_description": "Explore in-depth interviews highlighting authors and their works.",
+        "description": "Delve deeper into the lives and works of authors through our exclusive author spotlight interviews. Gain insight into their inspirations, writing processes, challenges faced, and the stories behind their books. These in-depth interviews offer readers an opportunity to connect with authors on a personal level, discovering the motivations and stories that drive their literary creations. From emerging talents to established voices, our author spotlight interviews showcase a diverse array of authors, providing readers with a glimpse into the fascinating world of storytelling.",
+        "date": "Scheduled releases throughout the year",
+        "time": "10:00 AM -4:00 PM",
+        "price": 25.99,
+        "image_url": "https://i.ibb.co/YRqLJqT/author-spotlight.jpg"
+      },
+      {
+        "title": "Literary Workshops & Courses",
+        "short_description": "Enroll in online workshops and courses covering various aspects of literature and writing.",
+        "description": "Expand your literary horizons and enhance your writing skills with our range of online workshops and courses. Led by experienced instructors and industry professionals, these sessions cover diverse aspects of literature, writing techniques, literary analysis, and more. Whether you're interested in honing your creative writing skills, exploring specific literary genres, or understanding the nuances of storytelling, our workshops offer valuable insights and practical knowledge. From beginner-friendly courses to specialized workshops for seasoned writers, dive into a world of literary learning and self-improvement.",
+        "date": "Scheduled sessions throughout the year",
+        "time": "10:00 AM -4:00 PM",
+        "price": 15.99,
+        "image_url": "https://i.ibb.co/Hnw4GVh/literacy-workshop.png"
+      }
+    ]
+  
