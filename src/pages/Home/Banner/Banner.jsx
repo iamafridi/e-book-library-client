@@ -14,7 +14,7 @@ const Banner = () => {
                             required
                         />
                         <button
-                            className="!absolute right-1 top-1 z-10 select-none rounded-xl bg-pink-950 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none peer-placeholder-shown:pointer-events-none peer-placeholder-shown:bg-blue-gray-500 peer-placeholder-shown:opacity-50 peer-placeholder-shown:shadow-none"
+                            className="!absolute right-1  btn btn-sm top-1 z-10 select-none rounded-xl bg-pink-950 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none peer-placeholder-shown:pointer-events-none peer-placeholder-shown:bg-blue-gray-500 peer-placeholder-shown:opacity-50 peer-placeholder-shown:shadow-none"
                             type="button"
                             data-ripple-light="true"
                         >
@@ -29,7 +29,7 @@ const Banner = () => {
                         <Link to='/login'>
                             <button type="button" className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2">Get Started</button></Link>
                         <Link to='/about'>
-                            <button type="button" className="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2">Learn More</button></Link>
+                            <button type="button" className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2">Learn More</button></Link>
                     </div>
                 </div>
                 <video className='rounded' autoPlay loop muted src={video}></video>
