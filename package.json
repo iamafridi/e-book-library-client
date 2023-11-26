@@ -13,6 +13,7 @@
     "@heroicons/react": "^2.0.18",
     "@material-tailwind/react": "^2.1.4",
     "apexcharts": "^3.44.0",
+    "firebase": "^10.6.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "preline": "^2.0.1",

@@ -2,7 +2,7 @@ import logo from '../../../../public/weblogo.png'
 
 const Footer = () => {
     return (
-        <footer className="p-6 bg-gray-700 text-white dark:bg-gray-100 dark:text-gray-800">
+        <footer className="p-6 bg-gray-700 text-white dark:bg-gray-100 dark:text-gray-800 mt-10">
           <div className='flex gap-5'>
           <div>
                 <img className='h-34 w-40' src={logo} alt="" />
