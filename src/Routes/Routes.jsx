@@ -3,26 +3,33 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../pages/Home/Home";
 import Login from "../pages/login/Login";
 import Register from "../pages/Register/Register";
+import BookNow from "../pages/BookNow/BookNow";
 
 const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <MainLayout></MainLayout>,
-      children:[
-        {
-            path:'/',
-            element:<Home></Home>
-        },
-        {
-            path:'/login',
-            element:<Login></Login>
-        },
-        {
-            path:'/register',
-            element:<Register></Register>
-        }
-      ]
-    },
-  ]);
+  {
+    path: "/",
+    element: <MainLayout></MainLayout>,
+    children: [
+      {
+        path: '/',
+        element: <Home></Home>
+      },
+      {
+        path: '/login',
+        element: <Login></Login>
+      },
+      {
+        path: '/register',
+        element: <Register></Register>
+      },
+      {
+        path: 'booknow/:id',
+        element: <BookNow></BookNow>,
+        loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
 
-  export default router
+      }
+    ]
+  },
+]);
+
+export default router
