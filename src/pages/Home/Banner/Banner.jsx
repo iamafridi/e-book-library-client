@@ -27,9 +27,9 @@ const Banner = () => {
                     </div>
                     <div className=" absolute flex h-12 w-full min-w-[200px] justify-center my-[28vh] lg:my-[50vh]  lg:mx-auto lg:max-w-[50rem]">
                         <Link to='/login'>
-                            <button type="button" className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2">Get Started</button></Link>
+                            <button className="btn text-white  bg-gray-500 border-0 font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2">Get Started</button></Link>
                         <Link to='/about'>
-                            <button type="button" className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2">Learn More</button></Link>
+                            <button  className="text-white btn btn-outline font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2">Learn More</button></Link>
                     </div>
                 </div>
                 <video className='rounded' autoPlay loop muted src={video}></video>

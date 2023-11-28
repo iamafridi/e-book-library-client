@@ -16,6 +16,7 @@ const handleLogout =()=>{
     const navlink = <>
         <li><NavLink to='/' >Home</NavLink></li>
         <li><NavLink to='/about' >About Us</NavLink></li>
+        <li><Link to="/bookings">My Bookings</Link></li>
     </>
 
     return (
