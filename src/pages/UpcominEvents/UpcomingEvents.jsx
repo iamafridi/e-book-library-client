@@ -23,7 +23,7 @@ const UpcomingEvents = () => {
     };
     return (
         <div className="text-center text-3xl mb-10 font-bold items-center justify-center  text-white bg-gray-700 rounded-xl">
-            <h2>Upcoming Events
+            <h2 className='p-10'>Upcoming Events
                 <hr className="w-28 h-2 mt-4  border-spacing-2 border-dotted bg-gray-500 justify-center border mx-auto " />
             </h2>
             <div className="flex mt-5 gap-5 justify-center mb-10 ">
@@ -37,7 +37,7 @@ const UpcomingEvents = () => {
                         spaceBetween={30}
                         centeredSlides={true}
                         autoplay={{
-                            delay: 10000,
+                            delay: 8000,
                             disableOnInteraction: false,
                         }}
                         pagination={{

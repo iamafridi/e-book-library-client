@@ -18,7 +18,7 @@ const PopularServices = () => {
 
 
     return (
-        <div className="mt-28 mb-10 p-10">
+        <div className="p-10">
             <div className="m-5 mb-16  ">
                 <h3 className="text-3xl font-bold text-center text-black">Popular Services</h3>
             </div>

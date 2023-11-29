@@ -1,11 +1,16 @@
 import { Link } from 'react-router-dom';
 import video from '../../../assets/video/VideoBackgroundLibrary.mp4'
+import img from '../../../assets/image/logo.png'
 
 const Banner = () => {
     return (
         <div className='mt-4 mb-10 '>
+            <div className='w-full absolute items-center justify-center '>
+                        <img className= ' w-1/5  rounded-full' src={img} alt="" />
+                    </div>
             <div id="video-container ">
                 <div className=' lg:m-10 items-center justify-center lg:mx-40'>
+                    
                     <div className=" border  my-[20vh] lg:my-[40vh]  lg:mx-auto rounded-xl bg-white absolute flex h-10 w-full min-w-[200px] lg:max-w-[50rem]">
                         <input
                             type="email"
