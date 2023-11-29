@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import app from "../Firebase/firebase.config";
+import axios from "axios";
 
 export const AuthContext = createContext();
 const auth = getAuth(app);
@@ -32,9 +33,30 @@ const AuthProvider = ({ children }) => {
     // Observing User
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
+
+            const userEmail = currentUser?.email || user?.email;
+            const loggedUser = { email: userEmail };
             setUser(currentUser);
             console.log(currentUser);
             setloading(false);
+
+            //  Using JWT HERE
+            // if User Exist then issueing a token 
+            if (currentUser) {
+
+                axios.post('http://localhost:5000/jwt', loggedUser, { withCredentials: true })
+                    .then(res => {
+                        console.log('Token Response', res.data);
+                    })
+            }
+            else {
+                axios.post('http://localhost:5000/logout', loggedUser, { withCredentials: true })
+                    .then(res => {
+                        console.log(res.data);
+                    })
+            }
+
+
         })
         return () => {
             return unSubscribe();

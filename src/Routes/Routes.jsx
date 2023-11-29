@@ -6,7 +6,6 @@ import Register from "../pages/Register/Register";
 import BookNow from "../pages/BookNow/BookNow";
 import Bookings from "../pages/Bookings/Bookings";
 import PrivateRoute from "./PrivateRoute";
-import BookingRow from "../pages/Bookings/BookingRow";
 
 const router = createBrowserRouter([
   {
