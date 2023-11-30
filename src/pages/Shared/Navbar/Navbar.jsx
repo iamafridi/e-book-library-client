@@ -5,18 +5,17 @@ import { AuthContext } from "../../../Provider/AuthProvider";
 
 
 const Navbar = () => {
-    const { user,logOut } = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
 
-const handleLogout =()=>{
-    logOut()
-    .then(()=>{})
-    .catch(error=>console.error(error))
-}
+    const handleLogout = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.error(error))
+    }
 
     const navlink = <>
         <li><NavLink to='/' >Home</NavLink></li>
         <li><NavLink to='/about' >About Us</NavLink></li>
-        <li><Link to="/bookings">My Bookings</Link></li>
     </>
 
     return (
@@ -32,8 +31,7 @@ const handleLogout =()=>{
                             <li>
                                 <a>Dashboard</a>
                                 <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
+                                <li><Link to="/bookings">My Bookings</Link></li>
                                 </ul>
                             </li>
 
@@ -46,27 +44,26 @@ const handleLogout =()=>{
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 ">
                         {navlink}
                         <li tabIndex={0}>
-                            <details>
+                            <details >
                                 <summary>Dashboard</summary>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
+                                <ul >
+                                    <li  className="w-40 -mt-6 hover:bg-slate-400"><Link to="/bookings">My Bookings</Link></li>
                                 </ul>
                             </details>
                         </li>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                   {
-                    user?.email? <button onClick={handleLogout} className="btn rounded-es-full rounded-se-full bg-gray-300  hover:bg-gray-900 text-black hover:text-yellow-50">Logout</button>
-                    :
-                    <Link to='/login'>
-                    <button className="btn rounded-es-full rounded-se-full bg-gray-300  hover:bg-gray-900 text-black hover:text-yellow-50">Login</button>
-                </Link>
-                   }
+                    {
+                        user?.email ? <button onClick={handleLogout} className="btn rounded-es-full rounded-se-full bg-gray-300  hover:bg-gray-900 text-black hover:text-yellow-50">Logout</button>
+                            :
+                            <Link to='/login'>
+                                <button className="btn rounded-es-full rounded-se-full bg-gray-300  hover:bg-gray-900 text-black hover:text-yellow-50">Login</button>
+                            </Link>
+                    }
                 </div>
             </div>
         </div>

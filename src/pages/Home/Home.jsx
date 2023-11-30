@@ -1,3 +1,4 @@
+import LatestBook from "../LatestBooks/LatestBook";
 import PopularServices from "../Services/PopularServices";
 import UpcomingEvents from "../UpcominEvents/UpcomingEvents";
 import Banner from "./Banner/Banner";
@@ -8,6 +9,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <PopularServices ></PopularServices>
+            <LatestBook></LatestBook>
             <UpcomingEvents></UpcomingEvents>
            
             <Newsletter></Newsletter>

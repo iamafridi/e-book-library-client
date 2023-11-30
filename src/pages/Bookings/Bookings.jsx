@@ -66,7 +66,7 @@ const Bookings = () => {
 
     return (
         <div>
-            <h3>Bookings : {bookings.length}</h3>
+            <h3 className="text-2xl text-center mt-8 "> <span className="border p-4 rounded-es-full rounded-se-full px-10 bg-gray-300">Bookings : {bookings.length}</span></h3>
             <section>
                 <div className="container p-2 mx-auto sm:p-4 text-gray-800">
                     <h2 className="mb-4 text-2xl font-semibold leadi">Invoices</h2>

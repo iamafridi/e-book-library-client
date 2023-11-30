@@ -5,6 +5,7 @@ const BookingRow = ({ booking, handleDelete, handleBookingConfirm }) => {
 
 
     return (
+      
 
         <tr className="border-b border-opacity-20 border-gray-300 bg-gray-50">
             <td className="p-3">

@@ -6,11 +6,14 @@ import Register from "../pages/Register/Register";
 import BookNow from "../pages/BookNow/BookNow";
 import Bookings from "../pages/Bookings/Bookings";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import About from "../pages/About/About";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
@@ -19,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login></Login>
+      },
+      {
+        path: '/about',
+        element: <About></About>
       },
       {
         path: '/register',
@@ -31,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'bookings',
-        element:  <PrivateRoute><Bookings></Bookings> </PrivateRoute>
+        element: <PrivateRoute><Bookings></Bookings> </PrivateRoute>
       }
     ]
   },
