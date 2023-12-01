@@ -1,64 +1,38 @@
- [
-      {
-        "title": "Personalized Reading Recommendations",
-        "short_description": "Get tailor-made book suggestions based on your preferences and reading history.",
-        "description": "Our personalized reading recommendation service aims to enhance your reading experience by offering customized book suggestions. By analyzing your reading habits, preferred genres, and past favorites, our team of literary experts and algorithms curates a personalized list of book recommendations just for you. Whether you're seeking a thrilling mystery, an inspiring memoir, or a gripping fantasy novel, our service ensures that you discover books perfectly suited to your taste. Dive into a world of literary exploration tailored to your unique preferences.",
-        "date": "Available on demand",
-        "time": "10:00 AM -4:00 PM",
-        "price": "Free 2 time then 2.50",
-        "image_url": "https://i.ibb.co/7J4nHYq/personal-Reading.webp"
-
-
-      },
-      {
-        "title": "Virtual Bookshelf Organization",
-        "short_description": "Organize and manage your digital book collection with our virtual bookshelf service.",
-        "description": "Simplify and streamline your reading experience with our virtual bookshelf organization service. Access and manage your digital book collection effortlessly by categorizing books according to genres, authors, reading status, and more. Our user-friendly platform allows you to create personalized virtual bookshelves, making it easy to track your reading progress, discover new reads, and maintain an organized library. Whether you're an avid reader with an extensive collection or just starting to build your digital library, our service helps you keep your literary world neatly arranged and easily accessible.",
-        "date": "Available on demand",
-        "time": "10:00 AM -4:00 PM",
-        "price": 2.99,
-        "image_url": "https://i.ibb.co/fDYhGmL/virtual-bookshelf.jpg"
-      },
-      {
-        "title": "Book Discussion Forums",
-        "short_description": "Join online forums to discuss books, share opinions, and connect with fellow readers.",
-        "description": "Engage in vibrant discussions about your favorite books and literary topics within our online book discussion forums. Connect with a community of readers, share your thoughts, and explore diverse perspectives on various books and genres. Whether you're looking to delve into classic literature, contemporary bestsellers, or niche genres, our forums provide a platform for meaningful conversations, book recommendations, and the exchange of insights. Participate in existing discussions or start your own, fostering a welcoming environment for book lovers to connect and engage in enriching literary discourse.",
-        "date": "Ongoing",
-        "time": "10:00 AM -4:00 PM",
-        "price": 10.99,
-        "image_url": "https://i.ibb.co/PZYMpHL/Book-discussion.jpg"
-      },
-      {
-        "title": "Reading Challenges & Goal Tracking",
-        "short_description": "Take part in reading challenges and track your reading progress and goals.",
-        "description": "Challenge yourself and set reading goals with our reading challenges and progress tracking service. Participate in themed reading challenges, such as reading a certain number of books within a genre, exploring diverse authors, or tackling specific literary themes. Track your reading progress, set personal reading goals, and celebrate milestones along the way. Our platform provides tools to log your reading activities, share progress with the community, and discover new reading challenges to keep your reading journey exciting and fulfilling.",
-        "date": "Ongoing",
-        "time": "10:00 AM -4:00 PM",
-        "price": 5.99,
-        "image_url": "https://i.ibb.co/F5jS909/99-reading.png"
-      },
-      {
-        "title": "Book Review Exchange",
-        "short_description": "Engage in a book review exchange program with fellow readers.",
-        "description": "Join our book review exchange program designed to foster a culture of shared literary insights and feedback among readers. Connect with fellow book enthusiasts, exchange book reviews, and discover new perspectives on books you've read or plan to read. Share your thoughts, opinions, and reflections on books while gaining valuable insights from diverse viewpoints. Engaging in the review exchange program not only helps you refine your own reviewing skills but also contributes to a supportive community of readers passionate about discussing and sharing their love for literature.",
-        "date": "Ongoing",
-        "time": "10:00 AM -4:00 PM",
-        "price": 8.99,
-        "image_url": "https://i.ibb.co/mNhD0t3/book-exchange.png"
-      },
-      {
-        "title": "Literary Workshops",
-        "short_description": "Enroll in online workshops and courses covering various aspects of literature and writing.",
-        "description": "Expand your literary horizons and enhance your writing skills with our range of online workshops and courses. Led by experienced instructors and industry professionals, these sessions cover diverse aspects of literature, writing techniques, literary analysis, and more. Whether you're interested in honing your creative writing skills, exploring specific literary genres, or understanding the nuances of storytelling, our workshops offer valuable insights and practical knowledge. From beginner-friendly courses to specialized workshops for seasoned writers, dive into a world of literary learning and self-improvement.",
-        "date": "Scheduled sessions throughout the year",
-        "time": "10:00 AM -4:00 PM",
-        "price": 15.99,
-        "image_url": "https://i.ibb.co/fGqBDfL/literacy-workshop.png"
-      }
-    ]
-  
-    
-
-
-
-
+[
+    {
+        "name": "To Kill a Mockingbird",
+        "author_name": "Harper Lee",
+        "description": "Harper Lee's Pulitzer Prize-winning masterwork of honor and injustice in the deep South—and the heroism of one man in the face of blind and violent hatred.",
+        "photo": "https://i.ibb.co/1dppXZq/to-kill-a-mockingbard.webp"
+    },
+    {
+        "name": "1984",
+        "author_name": "George Orwell",
+        "description": "George Orwell's dystopian novel explores the dangers of totalitarianism and the struggle for individualism in a bleak society dominated by government surveillance and manipulation.",
+        "photo": "https://i.ibb.co/brjjFbd/1984.jpg"
+    },
+    {
+        "name": "The Great Gatsby",
+        "author_name": "F. Scott Fitzgerald",
+        "description": "F. Scott Fitzgerald's classic novel capturing the essence of the Jazz Age in America, delving into themes of wealth, love, and the elusive American Dream.",
+        "photo": "https://i.ibb.co/S0SQmF1/the-gatsby.jpg"
+    },
+    {
+        "name": "Pride and Prejudice",
+        "author_name": "Jane Austen",
+        "description": "Jane Austen's timeless romantic novel explores societal expectations, love, and the complexities of relationships in 19th-century England.",
+        "photo": "https://i.ibb.co/7XpSvnx/Pride-and-Prejudice.jpg"
+    },
+    {
+        "name": "The Catcher in the Rye",
+        "author_name": "J.D. Salinger",
+        "description": "J.D. Salinger's influential novel follows the disillusioned teenager Holden Caulfield as he navigates the challenges of adolescence and society's expectations.",
+        "photo": "https://i.ibb.co/kxTyhVH/5107.jpg"
+    },
+    {
+        "name": "The Hobbit",
+        "author_name": "J.R.R. Tolkien",
+        "description": "J.R.R. Tolkien's enchanting tale of Bilbo Baggins embarking on a grand adventure to reclaim treasure guarded by the dragon Smaug, set in the magical world of Middle-earth.",
+        "photo": "https://i.ibb.co/T2CW8yn/The-Hobbit.jpg"
+    }
+]

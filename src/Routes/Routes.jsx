@@ -9,6 +9,7 @@ import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import About from "../pages/About/About";
 import AddBooks from "../pages/AddBooks/AddBooks";
+import Showbooks from "../pages/AddBooks/Showbooks";
 // import LatestBookCard from "../pages/LatestBooks/LatestBookCard";
 
 const router = createBrowserRouter([
@@ -43,8 +44,13 @@ const router = createBrowserRouter([
         element: <PrivateRoute><Bookings></Bookings> </PrivateRoute>
       },
       {
-        path:'/addbooks',
-        element:<AddBooks></AddBooks>
+        path: '/addbooks',
+        element: <AddBooks></AddBooks>
+      },
+      {
+        path: '/showbooks',
+        element: <Showbooks></Showbooks>,
+        loader: () => fetch('http://localhost:5000/books')
       }
     ]
   },
