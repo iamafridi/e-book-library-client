@@ -43,7 +43,7 @@ const BookNow = () => {
         console.log(booking);
 
         // Sending Data 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://e-book-library-server.vercel.app/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

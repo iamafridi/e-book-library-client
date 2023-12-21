@@ -11,7 +11,7 @@ const Banner = () => {
             <div id="video-container ">
                 <div className=' lg:m-10 items-center justify-center lg:mx-40'>
                     
-                    <div className=" border  my-[20vh] lg:my-[40vh]  lg:mx-auto rounded-xl bg-white absolute flex h-10 w-full min-w-[200px] lg:max-w-[50rem]">
+                    <div className=" border z-[1]  my-[20vh] lg:my-[40vh]  lg:mx-auto rounded-xl bg-white absolute flex h-10 w-full min-w-[200px] lg:max-w-[50rem]">
                         <input
                             type="email"
                             className="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 pr-20 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
@@ -30,7 +30,7 @@ const Banner = () => {
                             Search the book you are looking for...
                         </label>
                     </div>
-                    <div className=" absolute flex h-12 w-full min-w-[200px] justify-center my-[28vh] lg:my-[50vh]  lg:mx-auto lg:max-w-[50rem]">
+                    <div className=" absolute z-[1] flex h-12 w-full min-w-[200px] justify-center my-[28vh] lg:my-[50vh]  lg:mx-auto lg:max-w-[50rem]">
                         <Link to='/login'>
                             <button className="btn text-white  bg-gray-500 border-0 font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2">Get Started</button></Link>
                         <Link to='/about'>

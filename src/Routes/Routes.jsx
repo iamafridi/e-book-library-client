@@ -37,7 +37,7 @@ const router = createBrowserRouter([
       {
         path: 'booknow/:id',
         element: <BookNow></BookNow>,
-        loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+        loader: ({ params }) => fetch(`https://e-book-library-server.vercel.app/services/${params.id}`)
       },
       {
         path: 'bookings',
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
       {
         path: '/showbooks',
         element: <Showbooks></Showbooks>,
-        loader: () => fetch('http://localhost:5000/books')
+        loader: () => fetch('https://e-book-library-server.vercel.app/books')
       }
     ]
   },

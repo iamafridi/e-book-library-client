@@ -6,7 +6,7 @@ const LatestBook = () => {
     // Loading Data
     const [latestBooks, setLatestBooks] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/latestbook')
+        fetch('https://e-book-library-server.vercel.app/latestbook')
             .then(res => res.json())
             .then(data => setLatestBooks(data))
     }, [])
@@ -15,7 +15,7 @@ const LatestBook = () => {
         <div>
             <div className="p-10">
             <div className="m-5 mb-16  ">
-                <h3 className="text-3xl font-bold text-center text-black">Popular Services</h3>
+                <h3 className="text-3xl font-bold text-center text-black">Latest Book</h3>
             </div>
             <div className="grid grid-cols-2  mb-10 items-center  justify-center md:grid-cols-2 lg:grid-cols-3 gap-6">
             {

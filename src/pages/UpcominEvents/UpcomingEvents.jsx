@@ -22,7 +22,7 @@ const UpcomingEvents = () => {
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
     };
     return (
-        <div className="text-center text-3xl mb-10 font-bold items-center justify-center  text-white bg-gray-700 rounded-xl">
+        <div className="text-center text-3xl mb-10 font-bold items-center justify-center  text-white bg-gray-900 rounded-xl">
             <h2 className='p-10'>Upcoming Events
                 <hr className="w-28 h-2 mt-4  border-spacing-2 border-dotted bg-gray-500 justify-center border mx-auto " />
             </h2>
@@ -37,7 +37,7 @@ const UpcomingEvents = () => {
                         spaceBetween={30}
                         centeredSlides={true}
                         autoplay={{
-                            delay: 8000,
+                            delay: 5000,
                             disableOnInteraction: false,
                         }}
                         pagination={{
@@ -50,7 +50,7 @@ const UpcomingEvents = () => {
                     >
                         <div className='w-10'>
                             <SwiperSlide className='px-10 ml-5'>
-                                <div className='grid grid-col-1 lg:grid-cols-2 gap-5 p-5'>
+                                <div className='grid grid-cols-2 gap-5 p-5'>
                                     <div>
                                         <h3 className='text-sm mb-5'>Author Q&A Session: <br /> Exploring Literary Worlds</h3>
                                         <p className='w-50 md:w-32  text-xs text-left'>Join us for an exclusive live Q&A session with award-winning authors as they delve into the depths of their literary creations. This event aims to bring readers closer to the minds behind their favorite books, providing insights into the imaginative process, character development, and the inspiration behind the worlds they have crafted. From fantasy realms to historical settings, explore diverse literary landscapes and interact with authors who breathe life into them. Do not miss this opportunity to ask your burning questions and gain a deeper understanding of the stories that captivate you. The session will be moderated and open to audience participation through live chat.</p>

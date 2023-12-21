@@ -10,7 +10,7 @@ const Bookings = () => {
     console.log(bookings);
     console.log(user);
 
-    const url = `http://localhost:5000/bookings?customerEmail=${user?.email}`;
+    const url = `https://e-book-library-server.vercel.app/bookings?customerEmail=${user?.email}`;
     useEffect(() => {
         if (user?.email) {
             fetch(url,{
@@ -24,7 +24,7 @@ const Bookings = () => {
     const handleDelete = id => {
         const proceed = confirm('Are You Sure?');
         if (proceed) {
-            fetch(`http://localhost:5000/bookings/${id}`, {
+            fetch(`https://e-book-library-server.vercel.app/bookings/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -44,7 +44,7 @@ const Bookings = () => {
     }
 
     const handleBookingConfirm = id => {
-        fetch(`http://localhost:5000/bookings/${id}`, {
+        fetch(`https://e-book-library-server.vercel.app/bookings/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
