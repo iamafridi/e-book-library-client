@@ -45,11 +45,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/addbooks',
-        element: <AddBooks></AddBooks>
+        element: <PrivateRoute><AddBooks></AddBooks></PrivateRoute>
       },
       {
         path: '/showbooks',
-        element: <Showbooks></Showbooks>,
+        element: <PrivateRoute><Showbooks></Showbooks></PrivateRoute>,
         loader: () => fetch('https://e-book-library-server.vercel.app/books')
       }
     ]

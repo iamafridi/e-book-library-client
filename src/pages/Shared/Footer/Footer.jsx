@@ -1,63 +1,76 @@
-import logo from '../../../../public/weblogo.png'
+import logo from '../../../../public/weblogo.png';
 
 const Footer = () => {
     return (
-        <footer className="p-6 bg-gray-700 text-white dark:bg-gray-100 dark:text-gray-800 mt-10">
-          <div className='flex gap-5'>
-          <div>
-                <img className='h-34 w-40' src={logo} alt="" />
-               </div>
-            <div className="container grid grid-cols-2 mx-auto gap-x-3 gap-y-8 sm:grid-cols-3 md:grid-cols-4">
-               
-                <div className="flex flex-col space-y-4">
-                    <h2 className="font-medium">Getting started</h2>
-                    <div className="flex flex-col space-y-2 text-sm dark:text-gray-600">
-                        <a rel="noopener noreferrer" href="#">Installation</a>
-                        <a rel="noopener noreferrer" href="#">Release Notes</a>
-                        <a rel="noopener noreferrer" href="#">Upgrade Guide</a>
-                        <a rel="noopener noreferrer" href="#">Using with Preprocessors</a>
-                        <a rel="noopener noreferrer" href="#">Optimizing for Production</a>
-                        <a rel="noopener noreferrer" href="#">Browser Support</a>
-                        <a rel="noopener noreferrer" href="#">IntelliSense</a>
-                    </div>
+        <footer className="bg-pink-950 text-white pt-10 pb-6 px-6 mt-10">
+
+            {/* Logo Centered */}
+            <div className="flex flex-col items-center justify-center mb-8 text-center">
+                <img className="h-16 w-auto mb-2" src={logo} alt="Elara Library Logo" />
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-9xl from-neutral-300 m-2 italic font-bold font-poppins tracking-wide">
+                    Elara Library
+                </h1>
+                <p className="mt-2 text-sm max-w-md text-gray-300 mx-auto">
+                    A gateway to knowledge, creativity, and community. Explore thousands of books, attend events, and connect with like-minded readers.
+                </p>
+
+            </div>
+
+            {/* Grid Sections */}
+            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 text-center md:text-left">
+
+                {/* Quick Links */}
+                <div>
+                    <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
+                    <ul className="space-y-2 text-sm text-gray-300">
+                        <li><a href="#">Book Catalog</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Library Card</a></li>
+                        <li><a href="#">Search Database</a></li>
+                        <li><a href="#">Borrowing Rules</a></li>
+                    </ul>
                 </div>
-                <div className="flex flex-col space-y-4">
-                    <h2 className="font-medium">Core Concepts</h2>
-                    <div className="flex flex-col space-y-2 text-sm dark:text-gray-600">
-                        <a rel="noopener noreferrer" href="#">Utility-First</a>
-                        <a rel="noopener noreferrer" href="#">Responsive Design</a>
-                        <a rel="noopener noreferrer" href="#">Hover, Focus, &amp; Other States</a>
-                        <a rel="noopener noreferrer" href="#">Dark Mode</a>
-                        <a rel="noopener noreferrer" href="#">Adding Base Styles</a>
-                        <a rel="noopener noreferrer" href="#">Extracting Components</a>
-                        <a rel="noopener noreferrer" href="#">Adding New Utilities</a>
-                    </div>
+
+                {/* Resources */}
+                <div>
+                    <h3 className="text-lg font-semibold mb-3">Resources</h3>
+                    <ul className="space-y-2 text-sm text-gray-300">
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Research Help</a></li>
+                        <li><a href="#">Reading Rooms</a></li>
+                        <li><a href="#">Digital Library</a></li>
+                        <li><a href="#">Study Guides</a></li>
+                    </ul>
                 </div>
-                <div className="flex flex-col space-y-4">
-                    <h2 className="font-medium">Customization</h2>
-                    <div className="flex flex-col space-y-2 text-sm dark:text-gray-600">
-                        <a rel="noopener noreferrer" href="#">Configuration</a>
-                        <a rel="noopener noreferrer" href="#">Theme Configuration</a>
-                        <a rel="noopener noreferrer" href="#">Breakpoints</a>
-                        <a rel="noopener noreferrer" href="#">Customizing Colors</a>
-                        <a rel="noopener noreferrer" href="#">Customizing Spacing</a>
-                        <a rel="noopener noreferrer" href="#">Configuring Variants</a>
-                        <a rel="noopener noreferrer" href="#">Plugins</a>
-                    </div>
+
+                {/* Community */}
+                <div>
+                    <h3 className="text-lg font-semibold mb-3">Community</h3>
+                    <ul className="space-y-2 text-sm text-gray-300">
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Reading Clubs</a></li>
+                        <li><a href="#">Workshops</a></li>
+                        <li><a href="#">Support Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
-                <div className="flex flex-col space-y-4">
-                    <h2 className="font-medium">Community</h2>
-                    <div className="flex flex-col space-y-2 text-sm dark:text-gray-600">
-                        <a rel="noopener noreferrer" href="#">GitHub</a>
-                        <a rel="noopener noreferrer" href="#">Discord</a>
-                        <a rel="noopener noreferrer" href="#">Twitter</a>
-                        <a rel="noopener noreferrer" href="#">YouTube</a>
-                    </div>
+
+                {/* Stay Connected */}
+                <div>
+                    <h3 className="text-lg font-semibold mb-3">Stay Connected</h3>
+                    <ul className="space-y-2 text-sm text-gray-300">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
                 </div>
             </div>
-          </div>
-            <div className="flex items-center justify-center px-6 pt-12 text-sm">
-                <span className="dark:text-gray-600">© Copyright 2023. All Rights Reserved By Elara Books.</span>
+
+            {/* Bottom Bar */}
+            <div className="text-center mt-10 border-t border-gray-700 pt-6 text-sm text-gray-400">
+                © 2023 Elara Library. All rights reserved.
             </div>
         </footer>
     );

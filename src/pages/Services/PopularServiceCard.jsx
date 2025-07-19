@@ -2,48 +2,49 @@ import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 
 const PopularServiceCard = ({ service }) => {
+  const { _id, title, short_description, date, image_url, time, price } = service;
 
-    const {_id,title, short_description, date, image_url, time, price } = service
-    return (
+  return (
+    <div className="bg-white dark:bg-slate-900 border dark:border-gray-700 rounded-xl shadow-md flex flex-col sm:flex-row overflow-hidden">
+      {/* Image */}
+      <div className="relative w-full sm:w-1/3 h-64 sm:h-auto">
+        <img
+          src={image_url}
+          alt={title}
+          className="absolute top-0 left-0 w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Content */}
+      <div className="w-full sm:w-2/3 p-4 sm:p-6 flex flex-col justify-between">
+        {/* Title & Description */}
         <div>
-            <div className="bg-white border rounded-xl shadow-sm sm:flex dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
-                <div className="flex-shrink-0 relative w-full rounded-t-xl overflow-hidden pt-[40%] sm:rounded-s-xl sm:max-w-[15rem] md:rounded-se-none md:max-w-xs">
-                    <img className="w-full h-80 absolute top-0 start-0 object-cover" src={image_url} alt="Image Description" />
-                </div>
-                <div className="flex flex-wrap">
-                    <div className="p-4 flex flex-col h-full sm:p-7">
-                        <h3 className="text-lg font-bold text-gray-800 dark:text-white">
-                            {title}
-                        </h3>
-                        <p className="mt-1 text-gray-500 dark:text-gray-400">
-                            {short_description}
-                        </p>
-                        <div className="mt-5 flex-1 sm:mt-auto">
-                            <div className="mt-5">
-                                <p className="text-xs text-gray-500 dark:text-gray-500">
-                                    Time : {time}
-                                </p>
-                                <p className="text-xs font-bold text-gray-500 dark:text-gray-500">
-                                    Available at : {date}
-                                </p>
-                                <p className="text-xs font-bold text-gray-500 dark:text-gray-500">
-                                    Only : {price} $
-                                </p>
-                            </div>
-                            <div className="mt-2">
-                                <Link to={`/booknow/${_id}`}>
-                                    <button className="btn btn-sm bg-gray-500 text-white text-xs" type="button">Book Now <FaArrowRight /></button>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white">
+            {title}
+          </h3>
+          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 line-clamp-3">
+            {short_description}
+          </p>
         </div>
 
-    );
+        {/* Meta Info & Button */}
+        <div className="mt-5 space-y-2">
+          <p className="text-xs text-gray-500">⏰ Time: {time}</p>
+          <p className="text-xs font-medium text-gray-500">📅 Available: {date}</p>
+          <p className="text-xs font-medium text-gray-500">💵 Only: {price} $</p>
+
+          <Link to={`/booknow/${_id}`}>
+            <button
+              className="mt-3 btn btn-sm bg-gray-700 hover:bg-pink-950 text-white flex items-center gap-2"
+              type="button"
+            >
+              Book Now <FaArrowRight />
+            </button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default PopularServiceCard;

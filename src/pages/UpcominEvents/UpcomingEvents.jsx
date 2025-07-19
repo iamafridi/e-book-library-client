@@ -1,100 +1,122 @@
-/* eslint-disable react/no-unescaped-entities */
-import { useRef } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-import './styles.css';
-
-// import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
+import { useRef, useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const UpcomingEvents = () => {
-    const progressCircle = useRef(null);
-    const progressContent = useRef(null);
-    const onAutoplayTimeLeft = (s, time, progress) => {
-        progressCircle.current.style.setProperty('--progress', 1 - progress);
-        progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-    };
+  const swiperRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [slidesData, setSlidesData] = useState([]);
+
+  useEffect(() => {
+    fetch("public/upcomingEvents.json")
+      .then((res) => res.json())
+      .then((data) => setSlidesData(data.events))
+      .catch((err) => console.error("Failed to load events:", err));
+  }, []);
+
+  if (slidesData.length === 0) {
     return (
-        <div className="text-center text-3xl mb-10 font-bold items-center justify-center  text-white bg-gray-900 rounded-xl">
-            <h2 className='p-10'>Upcoming Events
-                <hr className="w-28 h-2 mt-4  border-spacing-2 border-dotted bg-gray-500 justify-center border mx-auto " />
-            </h2>
-            <div className="flex mt-5 gap-5 justify-center mb-10 ">
-                <button className="btn btn-outline bg-[#A25772] text-white">Saturday,Dec 14,2023 - 3:00 PM</button>
-                <button className="btn btn-outline bg-[#A25772] text-white">Dec 20,Poetry Club</button>
-                <button className="btn btn-outline bg-[#A25772] text-white">Dec 22,Sci-Fi Book Club</button>
-            </div>
-            <div>
-                <>
-                    <Swiper
-                        spaceBetween={30}
-                        centeredSlides={true}
-                        autoplay={{
-                            delay: 5000,
-                            disableOnInteraction: false,
-                        }}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        navigation={true}
-                        modules={[Autoplay, Pagination, Navigation]}
-                        onAutoplayTimeLeft={onAutoplayTimeLeft}
-                        className="mySwiper"
-                    >
-                        <div className='w-10'>
-                            <SwiperSlide className='px-10 ml-5'>
-                                <div className='grid grid-cols-2 gap-5 p-5'>
-                                    <div>
-                                        <h3 className='text-sm mb-5'>Author Q&A Session: <br /> Exploring Literary Worlds</h3>
-                                        <p className='w-50 md:w-32  text-xs text-left'>Join us for an exclusive live Q&A session with award-winning authors as they delve into the depths of their literary creations. This event aims to bring readers closer to the minds behind their favorite books, providing insights into the imaginative process, character development, and the inspiration behind the worlds they have crafted. From fantasy realms to historical settings, explore diverse literary landscapes and interact with authors who breathe life into them. Do not miss this opportunity to ask your burning questions and gain a deeper understanding of the stories that captivate you. The session will be moderated and open to audience participation through live chat.</p>
-                                    </div>
-                                    <div>
-                                        <img src="https://i.ibb.co/rGQRLST/swiper1.jpg" alt="" />
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            {/* slider 2 */}
-                            <SwiperSlide>
-                                <div className='grid grid-cols-2 gap-5 p-5'>
-                                    <div>
-                                        <h3 className='text-sm mb-5'>Book Club Discussion: <br /> Unraveling 'The Power of Words'</h3>
-                                        <p className='w-50 md:w-32 text-xs text-left'>Embark on a literary journey with fellow book enthusiasts in our online book club discussion. This session focuses on 'The Power of Words,' a thought-provoking book that explores the impact of language, storytelling, and communication in society. Engage in a lively conversation, share your insights, and delve into the themes, characters, and narrative techniques of this compelling work. Whether you're a casual reader or a devoted bookworm, this discussion offers a platform to exchange perspectives and interpretations in a welcoming and inclusive environment. Come prepared to express your thoughts and explore the power of words together.</p>
-                                    </div>
-                                    <div>
-                                        <img src="https://i.ibb.co/nBqr84j/Book-club.png" alt="" />
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className='grid grid-cols-2 gap-5 p-5'>
-                                    <div>
-                                        <h3 className='text-sm mb-5'>Writing Workshop: <br /> Crafting Compelling Characters</h3>
-                                        <p className='w-50 md:w-32 text-xs text-left'>Calling all aspiring writers! Join our interactive workshop focused on the craft of creating compelling characters. Led by seasoned authors and writing experts, this session will delve into the nuances of character development, exploring techniques to breathe life into your fictional personas. From outlining personalities to establishing motivations and conflicts, participants will engage in practical exercises and discussions aimed at honing their character-building skills. Whether you're working on a novel, short stories, or any form of creative writing, this workshop promises valuable insights and guidance to bring depth and authenticity to your characters.</p>
-                                    </div>
-                                    <div>
-                                        <img src="https://i.ibb.co/hFjvfwS/Writting-Workshop.jpg" alt="" />
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                        </div>
-                        <div className="autoplay-progress" slot="container-end">
-                            <svg viewBox="0 0 48 48" ref={progressCircle}>
-                                <circle cx="24" cy="24" r="20"></circle>
-                            </svg>
-                            <span ref={progressContent}></span>
-                        </div>
-                    </Swiper>
-                </>
-            </div>
-        </div>
+      <div className="text-center text-white p-10 bg-pink-950 rounded-xl max-w-7xl mx-auto">
+        Loading events...
+      </div>
     );
+  }
+
+  return (
+    <div className="text-center mt-10 mb-10 text-white bg-pink-950 rounded-xl p-6 sm:p-8 md:p-10 max-w-7xl mx-auto">
+      <h2
+        className="text-3xl sm:text-4xl font-poppins uppercase bg-gradient-to-r from-pink-600 via-gray-100 to-indigo-600 
+          text-transparent bg-clip-text border-l-8 border-pink-600 p-4 rounded-md tracking-wider 
+          shadow-md shadow-pink-200 select-none mb-8"
+      >
+        Upcoming Events
+      </h2>
+
+      {/* Slide buttons */}
+      <div className="flex flex-wrap justify-center gap-3 mb-8 px-2">
+        {slidesData.map(({ date, time }, idx) => (
+          <button
+            key={idx}
+            onClick={() => {
+              swiperRef.current?.slideTo(idx);
+              setActiveIndex(idx);
+            }}
+            aria-label={`Go to event ${idx + 1} on ${date} at ${time}`}
+            className={`btn btn-outline px-4 py-2 min-w-[140px] sm:min-w-[160px] md:min-w-[180px] rounded-md
+              transition-colors duration-300 ${activeIndex === idx
+                ? "bg-[#5f5257] text-white border-[#A25772]"
+                : "text-white border-white"
+              }`}
+            style={{ touchAction: "manipulation" }}
+          >
+            {date} <br /> {time}
+          </button>
+        ))}
+      </div>
+
+      {/* Swiper */}
+      <Swiper
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+        }}
+        spaceBetween={24}
+        centeredSlides={true}
+        autoplay={{
+          delay: 7000,
+          disableOnInteraction: false,
+        }}
+        pagination={{ clickable: true }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+        className="mySwiper max-w-full"
+        breakpoints={{
+          320: { slidesPerView: 1 },
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 1 },
+          1024: { slidesPerView: 1 },
+        }}
+      >
+        {slidesData.map(({ title, short_description, description, image, date, time }, idx) => (
+          <SwiperSlide key={idx} className="p-4">
+            <div className="lg:m-8 md:m-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+
+              <div className="lg:m-5">
+                <h3 className="text-xl font-semibold mb-3 md:mb-5">{title}</h3>
+
+                {/* Short description on small screens */}
+                <p className="text-sm md:hidden text-left max-w-full mx-auto break-words mb-4">
+                  {short_description || description}
+                </p>
+
+                {/* Full description on medium and up */}
+                <p className="hidden md:block text-base text-left max-w-lg mx-0 break-words mb-4">
+                  {description}
+                </p>
+
+                <p className="lg:text-start font-semibold text-sm mb-1">Date: {date}</p>
+                <p className="lg:text-start font-semibold text-sm">Time: {time}</p>
+              </div>
+
+              <div>
+                <img
+                  src={image}
+                  alt={title}
+                  className="w-full h-48 md:h-64 object-cover rounded-md shadow-lg mx-auto"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+
+
+      </Swiper>
+    </div>
+  );
 };
 
 export default UpcomingEvents;
