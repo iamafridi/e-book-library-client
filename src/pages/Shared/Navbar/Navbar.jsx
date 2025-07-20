@@ -13,15 +13,29 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink to="/" className="hover:text-pink-600">Home</NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? "border-b-2 border-gray-500" : "hover:text-black"
+          }
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/about" className="hover:text-pink-600">About Us</NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            isActive ? "border-b-2 border-gray-500" : "hover:text-black"
+          }
+        >
+          About Us
+        </NavLink>
       </li>
       <li tabIndex={0}>
         <details>
-          <summary className="hover:text-pink-600">Dashboard</summary>
-          <ul className="p-2 bg-base-100 rounded-box w-52">
+          <summary className="hover:text-pink-500">Dashboard</summary>
+          <ul className="p-2 text-black rounded-box w-52">
             <li><Link to="/bookings">My Bookings</Link></li>
             <li><Link to="/showbooks">All Books</Link></li>
             <li><Link to="/addbooks">Add Books</Link></li>
@@ -31,13 +45,14 @@ const Navbar = () => {
     </>
   );
 
+
+
   return (
     <header className="absolute top-0 left-0 w-full z-20 bg-transparent">
       <div className="navbar px-4 md:px-10">
-        {/* Left: Logo + Mobile Dropdown */}
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn bg-pink-950 text-white  lg:hidden">
+            <label tabIndex={0} className="btn bg-pink-950 text-white lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -50,9 +65,8 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white text-black rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow text-black rounded-box w-52"
             >
-              {/* Logo inside dropdown for small devices only */}
               <li className="flex justify-center mb-2 lg:hidden">
                 <Link to="/">
                   <img src={logo} alt="Elara" className="w-10 h-10 rounded-full" />
@@ -62,18 +76,15 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Logo for large screens */}
           <Link to="/" className="btn btn-ghost normal-case text-xl hidden lg:flex">
-            <img src={logo} alt="Elara" className="w-20 h-15 bg-gray-300 rounded-full" />
+            <img src={logo} alt="Elara" className="w-20 h-12 bg-gray-300 rounded-full" />
           </Link>
         </div>
 
-        {/* Center: Desktop Nav */}
-        <div className="navbar-center text-pink-50 hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+        <div className="navbar-center text-black hidden lg:flex">
+          <ul className="menu menu-horizontal bg-gray-300 rounded-full px-10">{navLinks}</ul>
         </div>
 
-        {/* Right: Auth Button */}
         <div className="navbar-end">
           {user?.email ? (
             <button

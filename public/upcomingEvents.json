@@ -4,7 +4,7 @@
       "title": "Author Q&A Session: Exploring Literary Worlds",
       "short_description": "Engage in a live discussion with renowned authors about their creative process, inspirations, and the worlds they create in their books.",
       "description": "Join us for an exclusive live Q&A session with award-winning authors as they delve into the depths of their literary creations. This event aims to bring readers closer to the minds behind their favorite books, providing insights into the imaginative process, character development, and the inspiration behind the worlds they've crafted. From fantasy realms to historical settings, explore diverse literary landscapes and interact with authors who breathe life into them. Don't miss this opportunity to ask your burning questions and gain a deeper understanding of the stories that captivate you. The session will be moderated and open to audience participation through live chat.",
-      "date": "2023-12-10",
+      "date": "10/12/2025",
       "image": "https://i.ibb.co/rGQRLST/swiper1.jpg",
       "time": "18:00 UTC"
     },
@@ -12,7 +12,7 @@
       "title": "Book Club Discussion: Unraveling 'The Power of Words'",
       "short_description": "Join our virtual book club to discuss and analyze 'The Power of Words' by a bestselling author.",
       "description": "Embark on a literary journey with fellow book enthusiasts in our online book club discussion. This session focuses on 'The Power of Words,' a thought-provoking book that explores the impact of language, storytelling, and communication in society. Engage in a lively conversation, share your insights, and delve into the themes, characters, and narrative techniques of this compelling work. Whether you're a casual reader or a devoted bookworm, this discussion offers a platform to exchange perspectives and interpretations in a welcoming and inclusive environment. Come prepared to express your thoughts and explore the power of words together.",
-      "date": "2023-12-15",
+      "date": "15/12/2025",
       "image": "https://i.ibb.co/hFjvfwS/Writting-Workshop.jpg",
       "time": "20:00 UTC"
     },
@@ -20,9 +20,49 @@
       "title": "Writing Workshop: Crafting Compelling Characters",
       "short_description": "Learn the art of character development in this interactive writing workshop.",
       "description": "Calling all aspiring writers! Join our interactive workshop focused on the craft of creating compelling characters. Led by seasoned authors and writing experts, this session will delve into the nuances of character development, exploring techniques to breathe life into your fictional personas. From outlining personalities to establishing motivations and conflicts, participants will engage in practical exercises and discussions aimed at honing their character-building skills. Whether you're working on a novel, short stories, or any form of creative writing, this workshop promises valuable insights and guidance to bring depth and authenticity to your characters.",
-      "date": "2024-01-05",
+      "date": "05/01/2026",
       "image": "https://i.ibb.co/nBqr84j/Book-club.png",
       "time": "17:30 UTC"
+    },
+    {
+      "title": "Poetry Night: Voices of the Soul",
+      "short_description": "An evening of live poetry readings by emerging and seasoned poets.",
+      "description": "Immerse yourself in the rhythm and emotion of the spoken word at our Poetry Night. This event features live readings by a diverse group of poets sharing works that explore identity, love, struggle, and the human spirit. Whether you're a poet, a lover of verse, or a curious listener, this soulful evening promises to be both intimate and inspiring.",
+      "date": "12/01/2026",
+      "image": "https://i.ibb.co/rGQRLST/swiper1.jpg",
+      "time": "19:00 UTC"
+    },
+    {
+      "title": "Panel Talk: The Future of Digital Publishing",
+      "short_description": "Industry leaders share insights on the evolution and impact of digital publishing.",
+      "description": "Explore the rapidly changing landscape of digital publishing with a panel of experts. From e-books to AI-driven content generation, we'll discuss the opportunities and challenges shaping the future of literature in the digital age. Perfect for writers, publishers, and tech enthusiasts alike.",
+      "date": "20/01/2026",
+      "image": "https://i.ibb.co/hFjvfwS/Writting-Workshop.jpg",
+      "time": "16:00 UTC"
+    },
+    {
+      "title": "Children's Storytime: Tales That Teach",
+      "short_description": "Engaging storytelling session for kids with fun and moral lessons.",
+      "description": "Bring your little ones to a magical storytime filled with vibrant tales and animated narration. Our storyteller will captivate young minds with stories that entertain, educate, and inspire positive values. Ideal for children aged 4-10.",
+      "date": "25/01/2026",
+      "image": "https://i.ibb.co/nBqr84j/Book-club.png",
+      "time": "10:30 UTC"
+    },
+    {
+      "title": "Literary Game Night: Trivia & Tales",
+      "short_description": "A fun night of book-themed games, trivia, and surprises.",
+      "description": "Test your literary knowledge and have fun with fellow book lovers in our interactive game night. With rounds of trivia, storytelling challenges, and mystery clues, it's a playful evening for readers of all kinds. Prizes await the sharpest minds!",
+      "date": "28/01/2026",
+      "image": "https://i.ibb.co/hFjvfwS/Writting-Workshop.jpg",
+      "time": "21:00 UTC"
+    },
+    {
+      "title": "Open Mic: Reader’s Choice",
+      "short_description": "Read your favorite passage or your own piece in this open mic session.",
+      "description": "Step up and share! Our open mic event invites readers and writers to take the stage and present a passage they love or a piece they've written. It’s a space for expression, community, and discovery — where every voice matters.",
+      "date": "02/02/2026",
+      "image": "https://i.ibb.co/rGQRLST/swiper1.jpg",
+      "time": "18:45 UTC"
     }
   ]
 }

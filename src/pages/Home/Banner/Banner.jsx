@@ -29,7 +29,7 @@ const Banner = () => {
           <input
             type="text"
             placeholder="Search the book you are looking for..."
-            className="w-full px-4 py-3 text-sm sm:text-base rounded-xl border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-pink-500 shadow-md"
+            className="w-full px-4 py-3 text-[8px] sm:text-base rounded-xl border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-pink-500 shadow-md"
           />
           <button
             className="absolute right-3 top-2 sm:top-2.5 px-4 py-2 bg-pink-950 text-white text-xs sm:text-sm rounded-xl shadow"

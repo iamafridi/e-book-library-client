@@ -2,7 +2,7 @@ import logo from '../../../../public/weblogo.png';
 
 const Footer = () => {
     return (
-        <footer className="bg-pink-950 text-white pt-10 pb-6 px-6 mt-10">
+        <footer className="bg-pink-950 rounded-t-xl text-white pt-10 pb-6 px-6 mt-10">
 
             {/* Logo Centered */}
             <div className="flex flex-col items-center justify-center mb-8 text-center">
@@ -69,9 +69,18 @@ const Footer = () => {
             </div>
 
             {/* Bottom Bar */}
-            <div className="text-center mt-10 border-t border-gray-700 pt-6 text-sm text-gray-400">
-                © 2023 Elara Library. All rights reserved.
+            <div className="text-center mt-16 border-t border-gray-700 pt-6 text-sm text-gray-400">
+                © {new Date().getFullYear()} <span className="font-medium text-white">Elara Library</span>. All rights reserved.{" "}
+                <a
+                    href="http://iamafrididev.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline p-1 text-pink-100 hover:text-pink-300 transition"
+                >
+                    Created by Afridi ⇗
+                </a>
             </div>
+
         </footer>
     );
 };
