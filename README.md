@@ -3,7 +3,8 @@
 A React-based e-book library frontend built with Vite, TailwindCSS, and Firebase authentication & hosting.
 
 ---
-c:\projects\e-book-library-client\public\Screenshot 2025-07-22 204928.png
+<img width="1902" height="920" alt="Screenshot 2025-07-22 204928" src="https://github.com/user-attachments/assets/435c9aa4-3d49-4a2b-bfdb-8ad2e005ddf1" />
+
 
 ## Features
 
