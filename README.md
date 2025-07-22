@@ -38,17 +38,6 @@ A React-based e-book library frontend built with Vite, TailwindCSS, and Firebase
 - Firebase CLI (`npm install -g firebase-tools`)
 - Firebase project created with Authentication and Hosting enabled
 
-### Project Structure (simplified)
-
-/src
-  /assets          # Images, videos
-  /components      # Reusable UI components (Banner, Navbar, etc.)
-  /pages           # Page components (Login, Register, ShowBooks, AddBooks)
-  /Provider        # React Context Providers (e.g. AuthProvider)
-App.jsx
-main.jsx
-tailwind.config.js
-vite.config.js
 
 ### Contact
 [Website](https://iamafrididev.netlify.app/)
