@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import toast from "react-hot-toast";
 
 
 const BookNow = () => {

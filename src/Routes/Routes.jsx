@@ -10,50 +10,56 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import About from "../pages/About/About";
 import AddBooks from "../pages/AddBooks/AddBooks";
 import Showbooks from "../pages/AddBooks/Showbooks";
-// import LatestBookCard from "../pages/LatestBooks/LatestBookCard";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout></MainLayout>,
-    errorElement: <ErrorPage></ErrorPage>,
+    element: <MainLayout />,
+    errorElement: <ErrorPage />,
     children: [
+      { path: "/", element: <Home /> },
+      { path: "/login", element: <Login /> },
+      { path: "/register", element: <Register /> },
+      { path: "/about", element: <About /> },
+
       {
-        path: '/',
-        element: <Home></Home>
+        path: "/booknow/:id",
+        element: (
+          <PrivateRoute>
+            <BookNow />
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`https://e-book-library-server.vercel.app/services/${params.id}`),
       },
       {
-        path: '/login',
-        element: <Login></Login>
+        path: "/bookings",
+        element: (
+          <PrivateRoute>
+            <Bookings />
+          </PrivateRoute>
+        ),
       },
       {
-        path: '/about',
-        element: <About></About>
+        path: "/addbooks",
+        element: (
+          <PrivateRoute>
+            <AddBooks />
+          </PrivateRoute>
+        ),
       },
       {
-        path: '/register',
-        element: <Register></Register>
+        path: "/showbooks",
+        element: (
+          <PrivateRoute>
+            <Showbooks />
+          </PrivateRoute>
+        ),
+        loader: () =>
+          fetch("https://e-book-library-server.vercel.app/books"),
       },
-      {
-        path: 'booknow/:id',
-        element: <BookNow></BookNow>,
-        loader: ({ params }) => fetch(`https://e-book-library-server.vercel.app/services/${params.id}`)
-      },
-      {
-        path: 'bookings',
-        element: <PrivateRoute><Bookings></Bookings> </PrivateRoute>
-      },
-      {
-        path: '/addbooks',
-        element: <PrivateRoute><AddBooks></AddBooks></PrivateRoute>
-      },
-      {
-        path: '/showbooks',
-        element: <PrivateRoute><Showbooks></Showbooks></PrivateRoute>,
-        loader: () => fetch('https://e-book-library-server.vercel.app/books')
-      }
-    ]
+    ],
   },
 ]);
 
-export default router
+export default router;

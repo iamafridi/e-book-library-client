@@ -2,11 +2,16 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
+import { useLocation } from "react-router-dom";
+
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
   const navigate = useNavigate();
-  const [loading, setLoading] = useState(false); // for loading state
+  const location = useLocation();
+  const [loading, setLoading] = useState(false);
+
+  const from = location.state?.from?.pathname || "/"; // ✅ get redirect target
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -21,7 +26,7 @@ const Login = () => {
         const user = result.user;
         const name = user.displayName || "there";
         toast.success(`Welcome back, ${name}!`);
-        navigate("/"); // redirect to homepage
+        navigate(from, { replace: true }); // ✅ go back to intended page
       })
       .catch((error) => {
         toast.error(error.message || "Login failed");
@@ -35,7 +40,7 @@ const Login = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-12">
       <div className="flex flex-col-reverse lg:flex-row max-w-6xl w-full bg-white rounded-lg overflow-hidden shadow-2xl">
-        
+
         {/* Image (hidden on small) */}
         <div className="hidden md:block w-full lg:w-1/2">
           <img
@@ -91,9 +96,8 @@ const Login = () => {
             <button
               type="submit"
               disabled={loading}
-              className={`w-full ${
-                loading ? "bg-gray-400" : "bg-blue-600 hover:bg-blue-700"
-              } text-white py-2 rounded-md transition`}
+              className={`w-full ${loading ? "bg-gray-400" : "bg-blue-600 hover:bg-blue-700"
+                } text-white py-2 rounded-md transition`}
             >
               {loading ? "Logging in..." : "Log in"}
             </button>
